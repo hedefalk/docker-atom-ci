@@ -1,8 +1,10 @@
 publish:
   docker:
-    registry: https://docker.woodenstake.se/
+    registry: https://docker.woodenstake.se
     username: $$DRONE_WOODENSTAKE_USR
     password: $$DRONE_WOODENSTAKE_PWD
     email: hedefalk@mail.com
-    repo: ensime-atom-ci
+    repo: ensime/ensime-atom-ci
     tag: latest
+    environment:
+      - DOCKER_LAUNCH_DEBUG=true
