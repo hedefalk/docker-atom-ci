@@ -1,6 +1,6 @@
 publish:
   docker:
-    registry: https://docker.woodenstake.se
+    registry: docker.woodenstake.se
     username: $$DRONE_WOODENSTAKE_USR
     password: $$DRONE_WOODENSTAKE_PWD
     email: hedefalk@mail.com
