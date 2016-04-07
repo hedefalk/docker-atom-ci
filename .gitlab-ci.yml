@@ -1,0 +1,8 @@
+before_script:
+  - docker info
+
+build_image:
+  script:
+    - docker build -t ensime/ensime-atom-ci .
+    - docker tag ensime/ensime-atom-ci docker.woodenstake.se/ensime/ensime-atom-ci
+    - docker push docker.woodenstake.se/ensime/ensime-atom-ci
